@@ -242,6 +242,12 @@ dependencies = [
 [[package]]
 name = "lata_core_lib"
 version = "0.1.0"
+dependencies = [
+ "bindgen",
+ "cbindgen",
+ "cc",
+ "pkg-config",
+]
 
 [[package]]
 name = "lazy_static"
@@ -505,6 +511,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "be55cf8942feac5c765c2c993422806843c9a9a45d4d5c407ad6dd2ea95eb9b6"
 dependencies = [
  "winapi-util",
+]
+
+[[package]]
+name = "test_utils"
+version = "0.1.0"
+dependencies = [
+ "bindgen",
+ "cbindgen",
+ "cc",
+ "libc",
+ "pkg-config",
 ]
 
 [[package]]
